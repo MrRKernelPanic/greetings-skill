@@ -6,11 +6,13 @@ Hopefully this skill will allow mycroft to answer simple greets with some sort o
 
 ## Examples
 * "Hello"
+* "Good evening"
+
+## To be done
 * "Goodbye"
 * "Bye"
 * "Good morning"
 * "Good afternoon"
-* "Good evening"
 * "How are you"
 
 ## Credits
