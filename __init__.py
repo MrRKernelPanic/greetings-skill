@@ -19,12 +19,12 @@ class GreetingsSkill(MycroftSkill):
     
     
     
-    #For each of the above intents there is a response.
+    #For each of the above intents there is a response, held in the .dialog files (can choose any of them!)
     def handle_hello_intent(self, message):
         self.speak_dialog("hello")
                                                                         
     def handle_good_evening(self, message):
-        self.speak_dialog("good evening")
+        self.speak_dialog("goodevening")
         
     def stop(self):
         pass
