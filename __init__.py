@@ -11,7 +11,7 @@ class GreetingsSkill(MycroftSkill):
         #This then call the 'def handler' that gives the response.  For each intent there should be a generated .VOC file that has the keyword.
         #The .voc file should have the same name as the required "", e.g. "HelloKeyword" below
         
-        hello_intent= IntentBuilder("HelloIntent").require("HelloKeyword").build()
+        hello_intent = IntentBuilder("HelloIntent").require("HelloKeyword").build()
         self.register_intent(hello_intent, self.handle_hello_intent)
         
         good_evening_intent = IntentBuilder("GoodEveningIntent".require("GoodEveningKeyword".build()
@@ -30,4 +30,4 @@ class GreetingsSkill(MycroftSkill):
         pass
 
 def create_skill():
-    return Greetings()
+    return GreetingsSkill()
