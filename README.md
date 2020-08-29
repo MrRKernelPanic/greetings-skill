@@ -7,13 +7,16 @@ Hopefully this skill will allow mycroft to answer simple greets with some sort o
 ## Examples
 * "Hello"
 * "Good evening"
-
-## To be done
 * "Goodbye"
 * "Bye"
 * "Good morning"
 * "Good afternoon"
 * "How are you"
+* "You are the bomb" /  "da bomb"
+
+
+## To Do - Notifications.
+Pushover.
 
 ## Credits
 Mark Routledge
