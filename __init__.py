@@ -23,7 +23,7 @@ class GreetingsSkill(MycroftSkill):
     def handle_hello_intent(self, message):
         self.speak_dialog("hello")
                                                                         
-    def handle_good_evening(self, message):
+    def handle_good_evening_intent(self, message):
         self.speak_dialog("goodevening")
         
     def stop(self):
