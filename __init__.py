@@ -20,7 +20,8 @@ class GreetingsSkill(MycroftSkill):
         good_evening_intent = IntentBuilder("GoodEveningIntent").require("GoodEveningKeyword").build()
         self.register_intent(good_evening_intent, self.handle_good_evening_intent)
     
-    
+        good_morning_intent = IntentBuilder("GoodMorningIntent").require("GoodMorningKeyword").build()
+        self.register_intent(good_morning_intent, self.handle_good_morning_intent)
     
     #For each of the above intents there is a response, held in the .dialog files (can choose any of them!)
     def handle_hello_intent(self, message):
@@ -31,6 +32,9 @@ class GreetingsSkill(MycroftSkill):
                                                                         
     def handle_good_evening_intent(self, message):
         self.speak_dialog("goodevening")
+    
+    def handle_good_evening_intent(self, message):
+        self.speak_dialog("goodmorning")
         
     def stop(self):
         pass
