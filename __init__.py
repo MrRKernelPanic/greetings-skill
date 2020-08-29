@@ -23,7 +23,7 @@ class GreetingsSkill(MycroftSkill):
         good_morning_intent = IntentBuilder("GoodMorningIntent").require("GoodMorningKeyword").build()
         self.register_intent(good_morning_intent, self.handle_good_morning_intent)
         
-        good_afternoon_intent = IntentBuilder("GoodAfternoonIntent").require("GoodAfernoonKeyword").build()
+        good_afternoon_intent = IntentBuilder("GoodAfternoonIntent").require("GoodAfternoonKeyword").build()
         self.register_intent(good_afternoon_intent, self.handle_good_afternoon_intent)        
         
     
