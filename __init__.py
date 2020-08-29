@@ -14,6 +14,9 @@ class GreetingsSkill(MycroftSkill):
         hello_intent = IntentBuilder("HelloIntent").require("HelloKeyword").build()
         self.register_intent(hello_intent, self.handle_hello_intent)
         
+        goodbye_intent = IntentBuilder("GoodbyeIntent").require("GoodbyeKeyword").build()
+        self.register_intent(goodbye_intent, self.handle_goodbye_intent)
+        
         good_evening_intent = IntentBuilder("GoodEveningIntent").require("GoodEveningKeyword").build()
         self.register_intent(good_evening_intent, self.handle_good_evening_intent)
     
@@ -22,6 +25,9 @@ class GreetingsSkill(MycroftSkill):
     #For each of the above intents there is a response, held in the .dialog files (can choose any of them!)
     def handle_hello_intent(self, message):
         self.speak_dialog("hello")
+        
+    def handle_goodbye_intent(self, message):
+        self.speak_dialog("goodbye")
                                                                         
     def handle_good_evening_intent(self, message):
         self.speak_dialog("goodevening")
