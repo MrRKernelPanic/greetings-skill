@@ -6,6 +6,8 @@ from mycroft.audio import wait_while_speaking, is_speaking
 from os.path import join, isfile, abspath, dirname
 from mycroft.util import play_wav
 
+from pushover import Client
+
 class GreetingsSkill(MycroftSkill):
     
     def __init__(self):
@@ -62,6 +64,9 @@ class GreetingsSkill(MycroftSkill):
     
     def handle_da_bomb_intent(self, message):
         #self.speak_dialog("howareyou")   Do stuff here!!!
+        client = Client("uMC4uvNmeaZqb4amQ4PXXLd48LyFGu", api_token="ayr3k9882mg9p8apd87cwffmbd99iv")
+        client.send_message("Dropped the Bomb", title="Mycroft Boom")
+        #Play the WAV.
         self.beep_process = play_wav(self.sound_file)
     
     def _stop_beep(self):
