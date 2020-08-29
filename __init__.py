@@ -66,7 +66,9 @@ class GreetingsSkill(MycroftSkill):
         #self.speak_dialog("howareyou")   Do stuff here!!!
         #This calls the Pushover API and sends me a message.
         client = Client("uMC4uvNmeaZqb4amQ4PXXLd48LyFGu", api_token="ayr3k9882mg9p8apd87cwffmbd99iv")
-        client.send_message("Dropped the Bomb", title="Mycroft Boom")
+        with open('/home/pi/bomb.png', 'rb') as image:
+            client.send_message('Dropping a gfx bomb', attachment=image)
+        #client.send_message("Dropped the Bomb", title="Mycroft Boom")
         #Play the WAV.
         self.beep_process = play_wav(self.sound_file)
     
