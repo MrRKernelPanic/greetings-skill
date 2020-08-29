@@ -64,6 +64,7 @@ class GreetingsSkill(MycroftSkill):
     
     def handle_da_bomb_intent(self, message):
         #self.speak_dialog("howareyou")   Do stuff here!!!
+        #This calls the Pushover API and sends me a message.
         client = Client("uMC4uvNmeaZqb4amQ4PXXLd48LyFGu", api_token="ayr3k9882mg9p8apd87cwffmbd99iv")
         client.send_message("Dropped the Bomb", title="Mycroft Boom")
         #Play the WAV.
