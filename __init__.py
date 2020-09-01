@@ -40,8 +40,12 @@ class GreetingsSkill(MycroftSkill):
         how_are_you_intent = IntentBuilder("HowAreYouIntent").require("HowAreYouKeyword").build()
         self.register_intent(how_are_you_intent, self.handle_how_are_you_intent)   
         
+        thank_you_intent = IntentBuilder("ThankYouIntent").require("ThankYouKeyword").build()
+        self.register_intent(thank_you_intent, self.handle_thank_you_intent)
+        
         da_bomb_intent = IntentBuilder("DaBombIntent").require("DaBombKeyword").build()
-        self.register_intent(da_bomb_intent, self.handle_da_bomb_intent)   
+        self.register_intent(da_bomb_intent, self.handle_da_bomb_intent) 
+        
    
     #For each of the above intents there is a response, held in the .dialog files (can choose any of them!)
     def handle_hello_intent(self, message):
@@ -61,6 +65,9 @@ class GreetingsSkill(MycroftSkill):
         
     def handle_how_are_you_intent(self, message):
         self.speak_dialog("howareyou")  
+        
+    def handle_thank_you_intent(self, message):
+        self.speak_dialog("thankyou")
     
     def handle_da_bomb_intent(self, message):
         #self.speak_dialog("howareyou")   Do stuff here!!!
