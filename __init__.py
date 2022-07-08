@@ -6,7 +6,7 @@ from mycroft.audio import wait_while_speaking, is_speaking
 from os.path import join, isfile, abspath, dirname
 from mycroft.util import play_wav
 
-from pushover import Client
+#from pushover import Client
 
 class GreetingsSkill(MycroftSkill):
     
@@ -72,9 +72,9 @@ class GreetingsSkill(MycroftSkill):
     def handle_da_bomb_intent(self, message):
         #self.speak_dialog("howareyou")   Do stuff here!!!
         #This calls the Pushover API and sends me a message.
-        client = Client(<API_KEY>, <API_TOKEN>="123456")
-        with open('/home/pi/bomb.png', 'rb') as image:
-            client.send_message('Dropping a gfx bomb', attachment=image)
+        #client = Client(<API_KEY>, <API_TOKEN>="123456")
+        #with open('/home/pi/bomb.png', 'rb') as image:
+        #    client.send_message('Dropping a gfx bomb', attachment=image)
         #client.send_message("Dropped the Bomb", title="Mycroft Boom")
         #Play the WAV.
         self.beep_process = play_wav(self.sound_file)
