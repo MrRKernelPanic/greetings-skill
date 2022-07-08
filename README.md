@@ -32,4 +32,7 @@ Mark Routledge
 #Good afternoon
 #Good evening
 #How are you
-
+Mycroft
+Picoft
+Mimic3
+skills
