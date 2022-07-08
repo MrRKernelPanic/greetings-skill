@@ -1,4 +1,4 @@
-# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/grin.svg" card_color="#FD9E66" width="50" height="50" style="vertical-align:bottom"/> Greetings
+# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/grin.svg" card_color="#FD9E66" width="50" height="50" style="vertical-align:bottom"/> Mycroft Greetings Skill
 Adds some responses to common greetings
 
 ## About
